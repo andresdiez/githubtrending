@@ -10,4 +10,13 @@
 
 @interface Model : NSObject
 
+
+@property BOOL isLoaded;
+
+//-(int) isLoaded;
+-(void) loadModel:(void(^)())callBack;
+-(NSString*) row:(NSInteger) index;
+-(NSDictionary*) detail:(NSInteger)index;
+-(NSUInteger) getLength;
+
 @end
